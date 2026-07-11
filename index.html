@@ -2,11 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My Static HTML Site</title>
+  <title>CI/CD Demo - B25G1106</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Azure Static Web Apps Demo</h1>
-  <p>GitHub Actions からデプロイしています。中村</p>
+  <main>
+    <h1>Azure Static Web Apps</h1>
+    <p class="lead">GitHub Actions から自動デプロイしています。</p>
+
+    <div class="flow">
+      <span>git push</span>
+      <span class="arrow">→</span>
+      <span>GitHub Actions</span>
+      <span class="arrow">→</span>
+      <span>Azure</span>
+    </div>
+
+    <div class="build">
+      <div class="label">このページのビルド情報（CI/CDが自動挿入）</div>
+      <code>__BUILD_INFO__</code>
+    </div>
+
+    <footer>千葉工業大学 情報変革科学部 / B25G1106 橋本朋樹</footer>
+  </main>
 </body>
 </html>
